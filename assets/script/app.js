@@ -106,6 +106,12 @@ const app = {
             singer: 'Coldplay',
             path: './assets/music/song10.mp3',
             image: './assets/img/song10.jpg'
+        },
+        {
+            name: 'Let Her Go (Feat. Ed Sheeran - Anniversary Edition)',
+            singer: 'Passenger',
+            path: './assets/music/song11.mp3',
+            image: './assets/img/song11.jpg'
         }
     ],
     //key = function render để render playlist
