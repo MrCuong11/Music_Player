@@ -142,11 +142,13 @@ header h2 {
     cursor: pointer;
 }
 
+
+
 /* PLAYLIST */
 .playlist {
     margin-top: 460px;
     padding: 12px;
-    height: 500px;
+    height: 100vh;
     overflow: auto;
     background-color: white;
 }
