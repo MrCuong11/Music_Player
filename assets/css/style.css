@@ -122,10 +122,22 @@ header h2 {
     background-color: var(--primary-color);
 }
 
+
+/* Reset appearance for all browsers */
+.progress::-webkit-slider-thumb,
+.progress::-moz-range-thumb,
+.progress::-ms-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 6px;
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+/* Change appearance for other browsers */
 .progress {
     width: 100%;
-    /* -webkit-appearance: none; Ẩn đi giao diện mặc định của phần tử đó, chẳng hạn như input range dưới đây */
-    /* height: 6px; */
     background: #d3d3d3;
     outline: none;
     opacity: 0.7;
@@ -134,12 +146,8 @@ header h2 {
 }
 
 .progress::-webkit-slider-thumb {
-    /* -webkit-appearance: none; */
-    appearance: none;
-    width: 12px;
-    height: 6px;
-    background-color: var(--primary-color);
-    cursor: pointer;
+    /* Only needed for Chrome and Safari */
+    -webkit-appearance: none;
 }
 
 
