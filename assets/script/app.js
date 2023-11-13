@@ -526,6 +526,18 @@ ${song.singer}">
         this.loadCurrentSong();
         //render bài hát
         this.render();
+
+
+
+
+
+        // Kiểm tra nếu là thiết bị di động thì sẽ ẩn thanh âm lượng
+        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+        if (isMobile) {
+            volumnOption.style.display = 'none';
+        }
+
     }
 }
 
